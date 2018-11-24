@@ -6,4 +6,16 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>OA-system-pojo</artifactId>
+  
+  <dependencies>
+  	<!-- hibernate -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-core</artifactId>
+	</dependency>
+  </dependencies>
+  
+  
+  
+  
 </project>

@@ -26,13 +26,12 @@
 	            <%-- 二级菜单 display: none; --%>
 	            <ul style="" class="MenuLevel2">
 	            	<s:iterator value="children">
-		            		<li class="level2">
-			                    <div class="level2Style">
-				                    <img src="${pageContext.request.contextPath}/style/images/MenuIcon/menu_arrow_single.gif" /> 
-				                    <a target="right" href="${pageContext.request.contextPath}/${url}UI.action"> ${name}</a>
-			                 	</div>
-			                </li>
-			              
+	            		<li class="level2">
+		                    <div class="level2Style">
+			                    <img src="${pageContext.request.contextPath}/style/images/MenuIcon/menu_arrow_single.gif" /> 
+			                    <a target="right" href="${pageContext.request.contextPath}/${url}UI.action"> ${name}</a>
+		                 	</div>
+		                </li>
 	            	</s:iterator>
 	            </ul>
 	        </li>

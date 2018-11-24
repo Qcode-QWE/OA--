@@ -9,5 +9,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>OA-portal-web</module>
+  	<module>OA-portal-interface</module>
   </modules>
 </project>
