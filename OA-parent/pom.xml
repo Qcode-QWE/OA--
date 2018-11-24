@@ -261,5 +261,6 @@
   	<module>OA-system-pojo</module>
   	<module>OA-common</module>
   	<module>OA-system</module>
+  	<module>OA-portal</module>
   </modules>
 </project>

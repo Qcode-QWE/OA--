@@ -2,18 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.QEcode</groupId>
-    <artifactId>OA-system</artifactId>
+    <artifactId>OA-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>OA-system-interface</artifactId>
-  
-  <dependencies>
-  <!-- pojo -->
-  	<dependency>
-  		 <groupId>com.QEcode</groupId>
-    	<artifactId>OA-system-pojo</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  </dependencies>
-  
+  <artifactId>OA-portal</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>OA-portal-web</module>
+  </modules>
 </project>
