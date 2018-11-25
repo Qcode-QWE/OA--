@@ -10,5 +10,14 @@
   <modules>
   	<module>OA-portal-web</module>
   	<module>OA-portal-interface</module>
+  	<module>OA-portal-dao</module>
+  	<module>OA-portal-service</module>
   </modules>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.QEcode</groupId>
+  		<artifactId>OA-common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

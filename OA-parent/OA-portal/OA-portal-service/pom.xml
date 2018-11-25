@@ -1,28 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-   <parent>
+  <parent>
     <groupId>com.QEcode</groupId>
-    <artifactId>OA-system</artifactId>
+    <artifactId>OA-portal</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-   </parent>
-    <artifactId>OA-system-service</artifactId>
-    <packaging>war</packaging>
-	<dependencies>
-		<dependency>
-	  		<groupId>com.QEcode</groupId>
-	  		<artifactId>OA-system-pojo</artifactId>
-	  		<version>0.0.1-SNAPSHOT</version>
-	  	</dependency>
-	  	<dependency>
-	  		<groupId>com.QEcode</groupId>
-	  		<artifactId>OA-system-dao</artifactId>
-	  		<version>0.0.1-SNAPSHOT</version>
-	  	</dependency>
-	  	<dependency>
-	  		<groupId>com.QEcode</groupId>
-	  		<artifactId>OA-system-interface</artifactId>
-	  		<version>0.0.1-SNAPSHOT</version>
-	  	</dependency>
+  </parent>
+  <artifactId>OA-portal-service</artifactId>
+  <packaging>war</packaging>
+  <dependencies>
 		<!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -93,5 +78,4 @@
 		
 		
   </dependencies>
-  
 </project>

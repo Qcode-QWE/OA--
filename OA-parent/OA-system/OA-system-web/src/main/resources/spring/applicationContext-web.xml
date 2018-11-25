@@ -4,16 +4,29 @@
 	xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:tx="http://www.springframework.org/schema/tx"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans 
         http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         ">
+        
+        <!-- 加载配置文件 -->
+    	<context:property-placeholder location="classpath:resource/*.properties"/>    
         <context:component-scan base-package="com.QEcode.OA.controller" />
-
+		<!-- 引用dubbo服务 -->
+		<dubbo:application name="OA-system-web"/>
+		<!-- 超时时间 -->
+		<dubbo:consumer timeout="5000" />
+		<dubbo:registry protocol="zookeeper" address="${dubbo.address}"/>    
+		<dubbo:reference interface="com.QEcode.OA.service.UserService" id="userService" />
+		
+		
  </beans>
